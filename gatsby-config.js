@@ -4,7 +4,9 @@ module.exports = {
     author: `Devscord.pl`,
     description: `The beginnings of devscord.pl`,
     siteUrl: `https://devscord.pl/`,
-    social: {}
+    social: {
+      twitter: `kbkk_pl`
+    }
   },
   plugins: [
     {
