@@ -3,7 +3,8 @@ module.exports = {
     title: `Devscord.pl Blog`,
     author: `Devscord.pl`,
     description: `The beginnings of devscord.pl`,
-    siteUrl: `https://devscord.pl/`
+    siteUrl: `https://devscord.pl/`,
+    social: {}
   },
   plugins: [
     {
