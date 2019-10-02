@@ -2,10 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import "gatsby-remark-vscode/styles.css"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+
+const calculateReadingTime = words => {
+  const averageReadingSpeed = 200 // words per minute
+  return Math.ceil(words / averageReadingSpeed)
+}
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,8 +19,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
+        <SEO />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -24,19 +27,31 @@ class BlogIndex extends React.Component {
               <header>
                 <h3
                   style={{
-                    marginBottom: rhythm(1 / 4),
+                    marginBottom: rhythm(1 / 4)
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link
+                    style={{ boxShadow: `none`, color: "#95C623" }}
+                    to={node.fields.slug}
+                  >
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
+                <small
+                  style={{
+                    paddingRight: "4px"
+                  }}
+                >
+                  {node.frontmatter.date}
+                </small>
+                <small>
+                  {calculateReadingTime(node.wordCount.words)} minut czytania
+                </small>
               </header>
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                    __html: node.frontmatter.description || node.excerpt
                   }}
                 />
               </section>
@@ -60,12 +75,15 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          wordCount {
+            words
+          }
           excerpt
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "LL,", locale: "pl")
             title
             description
           }

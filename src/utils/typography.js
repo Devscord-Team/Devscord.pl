@@ -4,12 +4,10 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 Wordpress2016.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
+      boxShadow: `none`
+    }
   }
 }
-
-delete Wordpress2016.googleFonts
 
 const typography = new Typography(Wordpress2016)
 
