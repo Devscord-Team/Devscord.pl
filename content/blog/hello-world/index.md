@@ -2,6 +2,7 @@
 title: Zażółć gęślą jaźń
 date: "2015-01-01T22:12:03.284Z"
 description: "Hello World. Żółta kaczka dziwaczka"
+tags: ["programowanie", "javascript"]
 ---
 
 This is my first post on my new fake blog! How exciting!

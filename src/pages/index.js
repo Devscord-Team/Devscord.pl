@@ -5,11 +5,7 @@ import "gatsby-remark-vscode/styles.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
-const calculateReadingTime = words => {
-  const averageReadingSpeed = 200 // words per minute
-  return Math.ceil(words / averageReadingSpeed)
-}
+import { calculateReadingTime } from "../utils/calculateReadingTime"
 
 class BlogIndex extends React.Component {
   render() {
@@ -19,7 +15,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+        <SEO title="Posty" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
