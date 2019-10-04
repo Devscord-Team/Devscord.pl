@@ -1,67 +1,25 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import "gatsby-remark-vscode/styles.css"
 
 import Layout from "../components/layout"
+import PostsSummary from "../components/postsSummary"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import { calculateReadingTime } from "../utils/calculateReadingTime"
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+export default function BlogIndex({ location }) {
+  const { site, allMarkdownRemark } = useStaticQuery(pageQuery)
+  const siteTitle = site.siteMetadata.title
+  const posts = allMarkdownRemark.edges
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Posty" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4)
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none`, color: "#95C623" }}
-                    to={node.fields.slug}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small
-                  style={{
-                    paddingRight: "4px"
-                  }}
-                >
-                  {node.frontmatter.date}
-                </small>
-                <small>
-                  {calculateReadingTime(node.wordCount.words)} minut czytania
-                </small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Posty" />
+      <PostsSummary posts={posts} />
+    </Layout>
+  )
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
+var pageQuery = graphql`
   query {
     site {
       siteMetadata {
@@ -82,6 +40,7 @@ export const pageQuery = graphql`
             date(formatString: "LL,", locale: "pl")
             title
             description
+            tags
           }
         }
       }
