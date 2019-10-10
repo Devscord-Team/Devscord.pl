@@ -1,101 +1,120 @@
 ---
-title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+title: Dlaczego samo programowanie to za mało
+date: "2018-10-08T22:40:32.169Z"
+description: Chcesz dowiedzieć się w jaki sposób popchnąć swój rozwój do przodu? Zapraszam do czytania!
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+# Dlaczego samo programowanie to za mało
 
-## On deer horse aboard tritely yikes and much
+Jeśli od jakiegoś czasu siedzisz w programowaniu, to na pewno zauważyłeś, że programistach i samym programowaniu krąży wiele mitów
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+- Jedni uważają, że programiści są aspołeczni
+- Drudzy uważają, że do programowania niezbędna jest zaawansowana matematyka
+- Jeszcze inni uważają, że programista **musi** mieć pasje
+- Są też przeciwnicy mówiący że to przereklamowana praca, którą może wykonywać **każdy**
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+W każdym z tych mitów jest trochę prawdy, ale jeśli jesteś spostrzegawczy, to pewnie zauważyliście pewien wspólny element.
+Tak! Każdy z wspomnianych mitów jest stwierdzeniem bardzo skrajnym.
 
-When she reached the first hills of the **Italic Mountains**, she had a last
-view back on the skyline of her hometown _Bookmarksgrove_, the headline of
-[Alphabet Village](http://google.com) and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.
+- Programistom jest potrzebna matematyka? Tak, ale nie wszystkim
+- Programiści są aspołeczni? Tak, ale nie wszyscy
+- Programista musi mieć pasje? Nie musi tego kochać, ale musi mieć chęci do rozwoju, jeżeli chce zarabiać powyżej minimum
 
-### Overlaid the jeepers uselessly much excluding
+### Jest jeszcze jedno takie skrajne podejście o którym zaraz ci opowiem
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+A dokładniej (jak pewnie się domyślasz po tytule) chodzi tutaj o to, jak wygląda praca programisty.
+To czym te osoby się zajmują i o czym większość osób uczących się programowania zapomina.
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+### Chodzi o to że... no właśnie
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
+Praca programisty to nie jest tylko pisanie kodu, więc sama umiejętność pisania kodu nie będzie decydować o tym, jak bardzo wartościowy jesteś.
+Oczywiście -> będzie ogromna różnica między osobą, która dopiero zaczyna i ledwo jest w stanie napisać pętle, a osobą która jest w stanie zapanować nad współbieżnością.
 
-### According a funnily until pre-set or arrogant well cheerful
+Jednak samo nauczenie się języka programowania w dobrym stopniu, co wcale nie jest takie trudne mając tyle poradników, kursów i nagrań z konferencji w internecie, jest bardzo proste.
+Dlatego często podczas wykonywania projektów w pracy, wiedza dobrego juniora będzie bardzo porównywalna z wiedzą bardziej doświadczonego programisty -> mam tutaj na myśli wiedzę potrzebną w ponad 90% sytuacji które spotkamy w kodzie. Oczywiście będą momenty gdzie będzie potrzebna bardzo specjalistyczna wiedza z wąskiego zakresu, ale te sytuacje zdarzają się dużo rzadziej... na tyle rzadko, że firmom by wystarczyło dużo mniej doświadczonych programistów, którzy przecież tak dużo kosztują!
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+## A więc jakie umiejętności są cenione u programistów, poza programowaniem?
 
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
+Przeanalizujmy to, o czym wspomniałem wcześniej, jednak nie dokończyłem.
+Co tak właściwie robi programista podczas swojego dnia pracy?
 
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
+- Planowanie wykonania zadania
+- Przewidywanie możliwych problemów
+- Zadawanie odpowiednich pytań, żeby zebrać pełne informacje
+- Szukanie informacji pomocniczych w internecie, dokumentacji i kodzie aplikacji
+- Sprawdzanie kodu innych programistów
+- Kontakt z klientem (nie zawsze)
+- Wykonywanie zadań
 
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
+Jak widzisz, dość dużą część zajmuje nie samo pisanie kodu, ale analiza wymagań, wszelkie dowiadywanie się co trzeba zrobić i bycie jak najmniej problematyczną osobą.
+Jedną z cech dobrego specjalisty jest to, że nie marnuje czasu innych -> dobry specjalista powinien przeanalizować co trzeba zrobić, pomyśleć co może sprawić problem, przepytać klienta lub inną osobę mającą wiedzę o tym co ma być zrobione...
+I oddać gotowe, prawidłowo zrobione zadanie.
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
+Dlaczego? Spróbuj wcielić się w rolę menadżera projektu lub klienta.
+Wolałbyś współpracę z osobą która rozumie co trzeba zrobić, a jak nie rozumie to zadaje pytania raz a konkretnie, czy współpracę z osobą, która co chwile lata do ciebie z pytaniami?
+No... jeśli to są kluczowe pytania i problemy wynikające z zewnątrz, pewnie nikt nie uzna tego za coś złego -> a nawet to dobrze, że wolałeś zapytać zamiast samodzielnie podejmować kluczowe decyzje, które nie są twoją odpowiedzialnością.
+Problem pojawia się w przypadku osób, które co chwile przychodzą z pytaniami, które były proste do przewidzenia, lub odpowiedź na nie jest łatwa do znalezienia.
 
-#### Silent delightfully including because before one up barring chameleon
+Pamiętaj że czas innych osób też kosztuje, a często bardzo dużo.
+Pamiętaj też, że odwrócenie uwagi na chwile może spowodować, że minie dłuższa chwila zanim ta osoba wróci do takiego skupienia na swoim zadaniu, jakie miała przed zadaniem tego pytania.
 
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
+Także... pytania nie są złe, szczególnie w przypadku początkujących. Ale osoby doświadczone mają większe doświadczenie w zadawaniu pytań i odpowiednim analizowaniu wymagań, przez co trzeba poświęcać im mniej uwagi... i pieniędzy.
 
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+### Wykonywanie zadań też można rozbić na wiele elementów
 
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
+Nie wiem co akurat ty masz w głowie myśląc "programowanie", jednak większość osób początkujących i tych z zewnątrz, ma na myśli sam język programowania.
+Dużo osób jest zdania, że jak opanują dany język programowania, to całą sekcje **Wykonywanie zadań** będą mieć zaliczoną... no nie do końca -> przykład z samym językiem programowania już opisałem.
+Sytuacji gdzie problem wynika z samej znajomości języka zdarza się bardzo rzadko, właśnie przez to, że w internecie jest dużo materiałów dobrej jakości.
+(oczywiście pomijam tu przypadki osób początkujących, mówię jedynie z czego może wynikać ogromna różnica między ogarniętym juniorem a midem lub seniorem).
 
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
+Do umiejętności programowania, poza samym językiem programowania można zaliczyć
+
+- Znajomość wzorców projektowych, strukturalnych itd
+- Wiedza jak działa kod "pod spodem"
+- Świadomość dlaczego poprzedni programiści podjęli takie a nie inne decyzje
+- Znajomość projektu w którym pracujesz
+- Pisania kodu określonym stylem
+- Praca z kodem innych programistów
+- Pisanie kodu czystego i prostego kodu
+
+Wszystko to dotyczy pisania kodu... jak się okazuje, znajomość samego języka programowania to za mało!
+A nawet każdej z tych umiejętności da się znaleźć wyspecjalizowane książki i kursy
+(niektóre z wymienionych są od siebie zależne, np jak znamy wzorce projektowe, to może być nam prościej zrozumieć kod innych itd).
+
+## A czasami nawet znajomość to za mało!
+
+Do pewnych tematów poza samą wiedzą "książkową", trzeba mieć jeszcze praktyczne doświadczenie.
+Dlaczego? Często występuje tutaj pewien problem, jako osoby poznające na nowo dany temat, nie jesteśmy w stanie wskazać realnego zastosowania, gdzie akurat to rozwiązanie (a nie żadne inne) będzie tym najlepszym.
+W skrócie -> dużo osób próbuje na siłę wpychać wszędzie narzędzia, których ostatnio się nauczyli, bo są nimi zafascynowani.
+
+Dlatego aby móc nazwać się specjalistą w określonym temacie, potrzebujemy jeszcze doświadczenia, które najprościej będzie zdobyć... tu pewnie nikogo nie zaskoczę... nauką na błędach, czyli po prostu programowaniem, tworzeniem projektów w których eksperymentujemy z narzędziami.
+
+### Świadomość to klucz do sukcesu
+
+Raz słyszałem, że niektóre książki powinno się czytać 3 razy
+
+- Kiedy poznajesz temat
+- Kiedy masz trochę doświadczenia i zaczynasz dostrzegać kluczowe elementy, których wcześniej nie zauważyłeś
+- Kiedy zepsułeś tak dużo projektów, że już wiesz przed czym autor chciał cię ustrzec... a ty bezmyślnie wpychałeś te rozwiązania wszędzie
+
+Jak się nad tym zastanowisz... to w sumie tak wygląda zostawanie specjalistą w każdej z dziedzin.
+
+- Najpierw uczysz się podstaw i wydaje ci się że twój pierwszy nauczyciel (nauczycielem może być też książka/blog/kurs online) jest mistrzem, i wie wszystko najlepiej
+- Później trafiasz na inne materiały + masz trochę własnego doświadczenia, dostrzegasz inne sposoby myślenia i stajesz się coraz bardziej pewny siebie
+- Na koniec, po wyniesieniu wniosków z wielu błędów, jesteś w stanie poradzić sobie w większości sytuacji
+
+## A więc jak rozwijać się jako programista? Co powinienem robić?
+
+Wymieniłem jakie umiejętności mają znaczenie w przypadku programistów oraz opisałem w jaki sposób wygląda zdobywanie doświadczenia (**zawsze!**).
+
+Co możesz zrobić?
+
+1.  Przejrzyj listy umiejętności które ci pokazałem
+2.  Zastanów się z czego jeszcze nie czujesz się dobrze
+3.  Zacznij się w tym rozwijać
+4.  Czytaj tego bloga regularnie - będą się tutaj pojawiać porady na temat umiejętności o których ci powiedziałem... i nie tylko!
+
+## Do zobaczenia przy następnym poście! Cześć!
 
 ###### Slapped cozy a that lightheartedly and far
 

@@ -1,0 +1,21 @@
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  transition: 0.5s transform ease-in-out;
+  transform: translate(70vw, -18vh);
+}
+
+.searchIcon:hover {
+  cursor: pointer;
+}
+
+.searchIconExpanded {
+  position: relative;
+  transition: 0.5s transform ease-in-out;
+  transform: translate(0, 29px) scale(0.9);
+  z-index: 10;
+}
+
+.searchIconExpanded:hover {
+  cursor: default;
+}

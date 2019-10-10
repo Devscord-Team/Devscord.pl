@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import { rhythm, scale } from "../utils/typography"
+import styles from "./layout.module.css"
 
 export default function Layout({ location, title, children }) {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -9,58 +8,26 @@ export default function Layout({ location, title, children }) {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          fontFamily: "Fira Code",
-          ...scale(1.2),
-          marginBottom: rhythm(1.5),
-          marginTop: 0
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`
-          }}
-          to={`/`}
-        >
+      <h1>
+        <Link className={styles.normalizedLink} to={`/`}>
           () => {title}
         </Link>
       </h1>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`
-          }}
-          to={`/`}
-        >
-          {title}
+      <h3>
+        <Link className={styles.normalizedLink} to={`/`}>
+          () => {title}
         </Link>
       </h3>
     )
   }
+
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(26),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-      }}
-    >
-      <header>{header}</header>
-      <main>{children}</main>
+    <div>
+      <header className={styles.header}>{header}</header>
+      <main className={styles.content}>{children}</main>
     </div>
   )
 }

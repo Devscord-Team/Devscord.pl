@@ -1,25 +1,41 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "gatsby-remark-vscode/styles.css"
-
 import Layout from "../components/layout"
-import PostsSummary from "../components/postsSummary"
+import Searcher from "../components/Searcher"
+import SearchIcon from "../components/Searcher/SearchIcon"
+import PostsSummary from "../components/postsSummary/postsSummary"
 import SEO from "../components/seo"
 
 export default function BlogIndex({ location }) {
-  const { site, allMarkdownRemark } = useStaticQuery(pageQuery)
-  const siteTitle = site.siteMetadata.title
-  const posts = allMarkdownRemark.edges
+  const { siteTitle, posts } = useRequiredData()
+  const { shrink, expand, isExpanded } = usePostsExpansion()
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Posty" />
-      <PostsSummary posts={posts} />
+      <SearchIcon expanded={isExpanded} expand={expand} />
+      <Searcher expanded={isExpanded} shrink={shrink} expand={expand} />
+      <PostsSummary expanded={isExpanded} posts={posts} />
     </Layout>
   )
 }
 
-var pageQuery = graphql`
+function useRequiredData() {
+  const { site, allMarkdownRemark } = useStaticQuery(pageQuery)
+  const siteTitle = site.siteMetadata.title
+  const posts = allMarkdownRemark.edges
+  return { siteTitle, posts }
+}
+
+function usePostsExpansion() {
+  const [isExpanded, setIsExpanded] = useState(false)
+  const shrink = () => setIsExpanded(false)
+  const expand = () => setIsExpanded(true)
+  return { shrink, expand, isExpanded }
+}
+
+const pageQuery = graphql`
   query {
     site {
       siteMetadata {

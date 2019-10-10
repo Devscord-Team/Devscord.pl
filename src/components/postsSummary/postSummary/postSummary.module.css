@@ -1,0 +1,18 @@
+.post {
+  margin-bottom: 45px;
+}
+
+.post-title {
+  color: #95c623;
+  font-size: 1.4rem;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.content {
+  line-height: 25px;
+}
+
+.date {
+  margin-right: 4px;
+}

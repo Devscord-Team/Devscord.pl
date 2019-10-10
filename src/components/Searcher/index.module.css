@@ -1,0 +1,34 @@
+.searcher {
+  border: 0;
+  width: 100%;
+  height: 0;
+  margin-bottom: 50px;
+  transform: translateX(-110vw);
+  transition: 0.3s transform ease-in-out;
+}
+
+.searcher.expandedSearcher {
+  transform: translateX(0);
+  transition: 0.3s transform ease-in-out;
+}
+
+.searcher:hover {
+  cursor: pointer;
+}
+
+.search {
+  font-size: 1.4rem;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  position: relative;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.search:focus {
+  outline: none;
+  border-bottom: 2px ridge black;
+}
