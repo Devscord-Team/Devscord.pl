@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import SearcherStyles from "./searcher.module.css"
+import styles from "./searcher.module.css"
 import classnames from "classnames"
 import useOnClickOutside from "use-onclickoutside"
 
@@ -10,15 +10,15 @@ export default function Searcher({ shrink, expanded, isDark }) {
     <div
       ref={ref}
       className={classnames({
-        [SearcherStyles.searcher]: true,
-        [SearcherStyles.expandedSearcher]: expanded
+        [styles.searcher]: true,
+        [styles.expandedSearcher]: expanded
       })}
     >
       <input
         type="text"
         className={classnames({
-          [SearcherStyles.search]: true,
-          [SearcherStyles.searchDark]: isDark
+          [styles.search]: true,
+          [styles.searchDark]: isDark
         })}
         onBlur={() => shrink()}
       />

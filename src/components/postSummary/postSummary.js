@@ -1,34 +1,28 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import PostSummaryStyles from "./postSummary.module.css"
+import styles from "./postSummary.module.css"
 import Tags from "../tags/tags"
 
 export default function PostSummary({
-  date,
-  minutes,
-  readingTime,
-  title,
-  slug,
-  content,
-  tags
+  post: { date, minutesInCorrectForm, readingTime, title, slug, content, tags }
 }) {
   return (
-    <article className={PostSummaryStyles.post}>
+    <article className={styles.post}>
       <header>
         <h3>
-          <Link className={PostSummaryStyles.postTitle} to={slug}>
+          <Link className={styles.postTitle} to={slug}>
             {title}
           </Link>
           <Tags tags={tags} />
         </h3>
-        <small className={PostSummaryStyles.date}>{date}</small>
+        <small className={styles.date}>{date}</small>
         <small>
-          {readingTime} {minutes} czytania
+          {readingTime} {minutesInCorrectForm} czytania
         </small>
       </header>
       <section>
-        <p className={PostSummaryStyles.content}>{content}</p>
+        <p className={styles.content}>{content}</p>
       </section>
     </article>
   )

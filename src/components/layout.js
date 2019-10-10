@@ -2,12 +2,27 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./layout.module.css"
 
-export default function Layout({ location, title, children, isDark }) {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+export default function Layout({
+  location: { pathname },
+  title,
+  children,
+  isDark
+}) {
+  const header = getPageHeader({ pathname, title, isDark })
 
-  if (location.pathname === rootPath) {
-    header = (
+  return (
+    <div>
+      <header className={styles.header}>{header}</header>
+      <main className={styles.content}>{children}</main>
+    </div>
+  )
+}
+
+function getPageHeader({ pathname, title, isDark }) {
+  const rootPath = `${__PATH_PREFIX__}/`
+
+  if (pathname === rootPath) {
+    return (
       <h1>
         <Link
           className={isDark ? styles.normalizedDarkLink : styles.normalizedLink}
@@ -18,7 +33,7 @@ export default function Layout({ location, title, children, isDark }) {
       </h1>
     )
   } else {
-    header = (
+    return (
       <h3>
         <Link className={styles.normalizedLink} to={`/`}>
           () => {title}
@@ -26,11 +41,4 @@ export default function Layout({ location, title, children, isDark }) {
       </h3>
     )
   }
-
-  return (
-    <div>
-      <header className={styles.header}>{header}</header>
-      <main className={styles.content}>{children}</main>
-    </div>
-  )
 }
