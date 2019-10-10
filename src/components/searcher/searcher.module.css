@@ -28,7 +28,18 @@
   border-bottom: 1px solid black;
 }
 
+.searchDark {
+  background-color: rgb(13, 34, 56);
+  color: white;
+  border-bottom: 1px solid white;
+}
+
 .search:focus {
   outline: none;
   border-bottom: 2px ridge black;
+}
+
+.searchDark:focus {
+  outline: none;
+  border-bottom: 2px ridge white;
 }

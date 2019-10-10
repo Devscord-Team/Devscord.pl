@@ -1,15 +1,15 @@
 import React from "react"
 import { calculateReadingTime } from "../../utils/calculateReadingTime"
-import Post from "./postSummary/postSummary"
-import styles from "./postsSummary.module.css"
+import Post from "../postSummary/postSummary"
+import PostsSummaryStyles from "./postsSummary.module.css"
 import classnames from "classnames"
 
 export default function PostsSummary({ posts, expanded }) {
   return (
     <div
       className={classnames({
-        [styles.postsSummary]: true,
-        [styles.postsSummaryExpanded]: expanded
+        [PostsSummaryStyles.postsSummary]: true,
+        [PostsSummaryStyles.postsSummaryExpanded]: expanded
       })}
     >
       {posts.map(({ node }) => {

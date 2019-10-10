@@ -1,24 +1,44 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import "gatsby-remark-vscode/styles.css"
+
 import Layout from "../components/layout"
-import Searcher from "../components/Searcher"
-import SearchIcon from "../components/Searcher/SearchIcon"
+import Searcher from "../components/searcher/searcher"
+import SearchIcon from "../components/searcher/searchIcon"
 import PostsSummary from "../components/postsSummary/postsSummary"
+import DarkModeToggle from "../components/darkModeToggle/darkModeToggle"
 import SEO from "../components/seo"
 
 export default function BlogIndex({ location }) {
   const { siteTitle, posts } = useRequiredData()
   const { shrink, expand, isExpanded } = usePostsExpansion()
+  const { isDark, setIsDark } = useDarkMode()
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout isDark={isDark} location={location} title={siteTitle}>
       <SEO title="Posty" />
-      <SearchIcon expanded={isExpanded} expand={expand} />
-      <Searcher expanded={isExpanded} shrink={shrink} expand={expand} />
+      <SearchIcon expanded={isExpanded} expand={expand} isDark={isDark} />
+      <Searcher
+        expanded={isExpanded}
+        shrink={shrink}
+        expand={expand}
+        isDark={isDark}
+      />
       <PostsSummary expanded={isExpanded} posts={posts} />
+      <DarkModeToggle toggleDarkMode={setIsDark} isDarkMode={isDark} />
     </Layout>
   )
+}
+
+function useDarkMode() {
+  const [isDark, setIsDark] = useState(
+    JSON.parse(localStorage.getItem("theme")) || false
+  )
+  useEffect(() => {
+    document.body.classList.toggle("dark", isDark)
+    localStorage.setItem("theme", JSON.stringify(isDark))
+  }, [isDark])
+
+  return { isDark, setIsDark }
 }
 
 function useRequiredData() {

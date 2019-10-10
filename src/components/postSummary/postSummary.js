@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import PostSummaryStyles from "./postSummary.module.css"
-import Tags from "./tags/tags"
+import Tags from "../tags/tags"
 
 export default function PostSummary({
   date,

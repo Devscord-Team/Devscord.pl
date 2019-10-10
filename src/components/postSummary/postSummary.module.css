@@ -4,7 +4,8 @@
 
 .post-title {
   color: #95c623;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   box-shadow: none;
   text-decoration: none;
 }

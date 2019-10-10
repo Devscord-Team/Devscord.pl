@@ -4,8 +4,6 @@ date: "2018-10-08T22:40:32.169Z"
 description: Chcesz dowiedzieć się w jaki sposób popchnąć swój rozwój do przodu? Zapraszam do czytania!
 ---
 
-# Dlaczego samo programowanie to za mało
-
 Jeśli od jakiegoś czasu siedzisz w programowaniu, to na pewno zauważyłeś, że programistach i samym programowaniu krąży wiele mitów
 
 - Jedni uważają, że programiści są aspołeczni

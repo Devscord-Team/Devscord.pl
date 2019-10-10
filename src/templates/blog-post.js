@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import "gatsby-remark-vscode/styles.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
