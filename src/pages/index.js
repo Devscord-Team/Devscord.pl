@@ -57,7 +57,9 @@ function useSearching(collection) {
 
 function useDarkMode() {
   const [isDark, setIsDark] = useState(
-    JSON.parse(localStorage.getItem("theme")) || false
+    JSON.parse(
+      typeof window !== "undefined" && window.localStorage.getItem("theme")
+    ) || false
   )
   useEffect(() => {
     document.body.classList.toggle("dark", isDark)

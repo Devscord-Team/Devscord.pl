@@ -11,10 +11,11 @@ export default function PostsSummary({ posts, expanded }) {
   })
   return (
     <div className={classes}>
-      {posts.map(({ node }) => {
-        const post = getPostInfoFromNode(node)
-        return <Post key={post.slug} post={post} />
-      })}
+      {posts &&
+        posts.map(({ node }) => {
+          const post = getPostInfoFromNode(node)
+          return <Post key={post.slug} post={post} />
+        })}
     </div>
   )
 }
