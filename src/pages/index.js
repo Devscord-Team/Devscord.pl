@@ -15,7 +15,7 @@ export default function BlogIndex({ location }) {
   const {
     searchingPhrase,
     setSearchingPhrase,
-    filteredCollection: filteredPosts
+    filteredCollection
   } = useSearching([...posts])
 
   return (
@@ -30,7 +30,7 @@ export default function BlogIndex({ location }) {
         expand={expand}
         isDark={isDark}
       />
-      <PostsSummary expanded={isExpanded} posts={filteredPosts} />
+      <PostsSummary expanded={isExpanded} posts={filteredCollection} />
       <DarkModeToggle toggleDarkMode={setIsDark} isDarkMode={isDark} />
     </Layout>
   )
@@ -43,12 +43,12 @@ function useSearching(collection) {
   useEffect(() => {
     if (searchingPhrase.length > 0) {
       setFilteredCollection(posts =>
-        posts.filter(post =>
+        collection.filter(post =>
           post.node.frontmatter.title.includes(searchingPhrase)
         )
       )
     } else {
-      setFilteredCollection(posts)
+      setFilteredCollection(collection)
     }
   }, [collection, searchingPhrase])
 
