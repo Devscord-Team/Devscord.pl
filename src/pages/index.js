@@ -16,7 +16,7 @@ export default function BlogIndex({ location }) {
     searchingPhrase,
     setSearchingPhrase,
     filteredCollection
-  } = useSearching([...posts])
+  } = useSearching(posts)
 
   return (
     <Layout isDark={isDark} location={location} title={siteTitle}>
@@ -43,7 +43,7 @@ function useSearching(collection) {
   useEffect(() => {
     if (searchingPhrase.length > 0) {
       setFilteredCollection(posts =>
-        collection.filter(post =>
+        posts.filter(post =>
           post.node.frontmatter.title.includes(searchingPhrase)
         )
       )
