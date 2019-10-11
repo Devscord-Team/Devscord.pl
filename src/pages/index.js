@@ -12,21 +12,47 @@ export default function BlogIndex({ location }) {
   const { siteTitle, posts } = useRequiredData()
   const { shrink, expand, isExpanded } = usePostsExpansion()
   const { isDark, setIsDark } = useDarkMode()
+  const {
+    searchingPhrase,
+    setSearchingPhrase,
+    filteredCollection: filteredPosts
+  } = useSearching([...posts])
 
   return (
     <Layout isDark={isDark} location={location} title={siteTitle}>
       <SEO title="Posty" />
       <SearchIcon expanded={isExpanded} expand={expand} isDark={isDark} />
       <Searcher
+        searchingPhrase={searchingPhrase}
+        setSearchingPhrase={setSearchingPhrase}
         expanded={isExpanded}
         shrink={shrink}
         expand={expand}
         isDark={isDark}
       />
-      <PostsSummary expanded={isExpanded} posts={posts} />
+      <PostsSummary expanded={isExpanded} posts={filteredPosts} />
       <DarkModeToggle toggleDarkMode={setIsDark} isDarkMode={isDark} />
     </Layout>
   )
+}
+
+function useSearching(collection) {
+  const [filteredCollection, setFilteredCollection] = useState()
+  const [searchingPhrase, setSearchingPhrase] = useState("")
+
+  useEffect(() => {
+    if (searchingPhrase.length > 0) {
+      setFilteredCollection(posts =>
+        posts.filter(post =>
+          post.node.frontmatter.title.includes(searchingPhrase)
+        )
+      )
+    } else {
+      setFilteredCollection(posts)
+    }
+  }, [collection, searchingPhrase])
+
+  return { searchingPhrase, setSearchingPhrase, filteredCollection }
 }
 
 function useDarkMode() {
