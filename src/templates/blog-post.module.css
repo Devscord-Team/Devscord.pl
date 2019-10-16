@@ -10,13 +10,12 @@
 }
 
 .blogPostContent ul,
-.blogPostContent ol
-{
+.blogPostContent ol {
   line-height: 1.8rem;
 }
 
-.blogPostContent p{
-  word-spacing: .2rem;
+.blogPostContent p {
+  word-spacing: 0.2rem;
   line-height: 1.5rem;
   text-align: left;
 }
@@ -25,12 +24,12 @@
   color: #95c623;
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .blogPostTitle {
     font-size: 1.4rem;
   }
   .blogPostContent {
     font-size: 1.2rem;
-    word-spacing: .3rem;
+    word-spacing: 0.3rem;
   }
 }

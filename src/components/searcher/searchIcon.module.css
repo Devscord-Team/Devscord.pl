@@ -13,9 +13,15 @@
 
 .searchIconExpanded {
   transition: 0.5s all ease-in-out;
-  top: 180px;
-  right: 75%;
+  top: 210px;
+  right: 73.7%;
   z-index: 10;
+}
+
+@media(max-width: 1024px) {
+  .searchIconExpanded {
+    right: 86%;
+  }
 }
 
 .searchIconExpanded:hover {

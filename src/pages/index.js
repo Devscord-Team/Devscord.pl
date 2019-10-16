@@ -23,7 +23,6 @@ export default function BlogIndex({ location }) {
   return (
     <Layout isDark={isDark} location={location} title={siteTitle}>
       <SEO title="Posty" />
-      <SearchIcon expanded={isExpanded} expand={expand} isDark={isDark} />
       <Searcher
         searchingPhrase={searchingPhrase}
         setSearchingPhrase={setSearchingPhrase}
@@ -32,6 +31,7 @@ export default function BlogIndex({ location }) {
         expand={expand}
         isDark={isDark}
       />
+      <SearchIcon expanded={isExpanded} expand={expand} isDark={isDark} />
       <PostsSummary expanded={isExpanded} posts={filteredCollection} />
       <DarkModeToggle toggleDarkMode={setIsDark} isDarkMode={isDark} />
     </Layout>
