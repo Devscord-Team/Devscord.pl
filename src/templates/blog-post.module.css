@@ -1,0 +1,33 @@
+.blogPostTitle {
+  font-size: 1.8rem;
+  color: #95c623;
+  font-family: "Merriweather", monospace;
+}
+
+.blogPostContent {
+  font-family: "Roboto", monospace;
+  font-size: 1.1rem;
+}
+
+.blogPostContent ul{
+  line-height: 1.8rem;
+}
+
+.blogPostContent p{
+  word-spacing: .2rem;
+  text-align: left;
+}
+
+.blogPostContent a {
+  color: #95c623;
+}
+
+@media(max-width: 1024px) {
+  .blogPostTitle {
+    font-size: 1.4rem;
+  }
+  .blogPostContent {
+    font-size: 1.2rem;
+    word-spacing: .3rem;
+  }
+}

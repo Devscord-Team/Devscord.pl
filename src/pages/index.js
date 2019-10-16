@@ -8,6 +8,8 @@ import PostsSummary from "../components/postsSummary/postsSummary"
 import DarkModeToggle from "../components/darkModeToggle/darkModeToggle"
 import SEO from "../components/seo"
 
+import { useDarkMode } from "../utils/useDarkMode"
+
 export default function BlogIndex({ location }) {
   const { siteTitle, posts } = useRequiredData()
   const { shrink, expand, isExpanded } = usePostsExpansion()
@@ -53,20 +55,6 @@ function useSearching(collection) {
   }, [collection, searchingPhrase])
 
   return { searchingPhrase, setSearchingPhrase, filteredCollection }
-}
-
-function useDarkMode() {
-  const [isDark, setIsDark] = useState(
-    JSON.parse(
-      typeof window !== "undefined" && window.localStorage.getItem("theme")
-    ) || false
-  )
-  useEffect(() => {
-    document.body.classList.toggle("dark", isDark)
-    localStorage.setItem("theme", JSON.stringify(isDark))
-  }, [isDark])
-
-  return { isDark, setIsDark }
 }
 
 function useRequiredData() {

@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.normalizedLink {
+  color: #95c623;
+  text-decoration: none;
+}

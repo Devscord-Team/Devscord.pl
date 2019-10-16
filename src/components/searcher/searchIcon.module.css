@@ -1,8 +1,10 @@
 .searchIcon {
   width: 20px;
   height: 20px;
-  transition: 0.5s transform ease-in-out;
-  transform: translate(70vw, -18vh);
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .searchIcon:hover {
@@ -10,9 +12,9 @@
 }
 
 .searchIconExpanded {
-  position: relative;
-  transition: 0.5s transform ease-in-out;
-  transform: translate(0, 29px) scale(0.9);
+  transition: 0.5s all ease-in-out;
+  top: 180px;
+  right: 75%;
   z-index: 10;
 }
 
