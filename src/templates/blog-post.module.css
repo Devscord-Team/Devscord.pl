@@ -15,6 +15,7 @@
 
 .blogPostContent p{
   word-spacing: .2rem;
+  line-height: 1.5rem;
   text-align: left;
 }
 
