@@ -1,6 +1,6 @@
 ---
 title: Czym jest to całe DDD?
-date: "2019-11-02T18:40:32.169Z"
+date: "2019-11-02T01:40:32.169Z"
 description: DDD to termin dokładniej opisany przez m.in Erica Evansa w jego książce „Domain-Driven Design. Zapanuj nad złożonym systemem informatycznym”. Chcesz dowiedzieć się wstępnie o co tutaj chodzi i dlaczego warto zagłębić się w temat? Zapraszam do czytania!
 ---
 
