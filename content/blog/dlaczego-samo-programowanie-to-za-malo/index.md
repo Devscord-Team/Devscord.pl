@@ -27,4 +27,6 @@ Jeśli w każdym przypadku nasz value object będzie wyglądać tak samo (np obi
 Elementów, z których składa się DDD, jest dużo więcej, co pokazuje przykładowo ten schemat: 
 ![ddd-pattern](./ddd-pattern.png) 
 
-Dlatego w jednym poście nie jestem w stanie opisać każdego z elementów — jeśli temat cię zainteresował i chcesz zagłębić się w temat, zwróć uwagę na źródła, które opisałem na samym początku. **Uwaga** W poście czasami używam wyrażenia „obiekt”, mając na myśli model obiektu. Nie mam tu na myśl fizycznego obiektu, czyli instancji jakiejś klasy.
+Dlatego w jednym poście nie jestem w stanie opisać każdego z elementów — jeśli temat cię zainteresował i chcesz zagłębić się w temat, zwróć uwagę na źródła, które opisałem na samym początku. 
+
+**Uwaga** W poście czasami używam wyrażenia „obiekt”, mając na myśli model obiektu. Nie mam tu na myśl fizycznego obiektu, czyli instancji jakiejś klasy.
