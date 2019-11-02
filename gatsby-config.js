@@ -83,6 +83,7 @@ module.exports = {
           families: ["Fira Code", "Roboto", "Merriweather"]
         }
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
   ]
 }
