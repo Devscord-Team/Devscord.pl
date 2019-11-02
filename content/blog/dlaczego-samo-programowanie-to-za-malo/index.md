@@ -1,6 +1,6 @@
 ---
 title: Dlaczego samo programowanie to za mało
-date: "2018-10-08T22:40:32.169Z"
+date: "2019-10-08T22:40:32.169Z"
 description: Chcesz dowiedzieć się w jaki sposób popchnąć swój rozwój do przodu? Zapraszam do czytania!
 ---
 
