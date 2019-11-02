@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Devscord.pl`,
     author: `Devscord.pl Team`,
-    description: `The beginnings of devscord.pl`,
+    description: `Blog dla każdego programisty, który chce wiedzieć więcej.`,
     siteUrl: `https://devscord.pl/`
   },
   plugins: [
@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-102585749`
       }
     },
     `gatsby-plugin-feed`,
