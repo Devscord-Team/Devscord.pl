@@ -22,7 +22,7 @@ export default function BlogIndex({ location }) {
 
   return (
     <Layout isDark={isDark} location={location} title={siteTitle}>
-      <SEO title="Posty" description="Programistyczny blog dla tych którzy chcą wiedzieć więcej"/>
+      <SEO title="Devscord.pl" description="Programistyczny blog dla tych którzy chcą wiedzieć więcej" />
       <Searcher
         searchingPhrase={searchingPhrase}
         setSearchingPhrase={setSearchingPhrase}
