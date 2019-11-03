@@ -1,6 +1,6 @@
 ---
 title: Czy nadaję się na programistę, jeśli jestem słaby z matmy w szkole?
-date: "2019-11-02T07:40:32.169Z"
+date: "2019-10-10T07:40:32.169Z"
 description: Dość kontrowersyjny temat, więc całkiem możliwe, że wiele osób będzie miało inne zdanie na ten temat... lub to samo, ale opisywane innymi słowami. Temat dotyczy matematyki, której wymaga od nas szkoła.
 ---
 

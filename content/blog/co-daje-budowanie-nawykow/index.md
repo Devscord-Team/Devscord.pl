@@ -1,6 +1,6 @@
 ---
 title: Co daje budowanie nawyków?
-date: "2019-11-02T10:40:32.169Z"
+date: "2019-10-25T10:40:32.169Z"
 description: Postanowiłem zbudować kilka nawyków, które uważałem za wartościowe... jednak to nie było coś, co sam z siebie robiłem automatycznie, często moja motywacja się zmieniała, często odpuszczałem, bo wolałem w danej godzinie robić coś innego. Też tak masz? Czujesz że twoje życie byłoby lepsze, gdybyś automatycznie robił pewne czynności Jeśli tak — zapraszam do czytania!
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Co zrobić, żeby motywacja do programowania wróciła?
-date: "2019-11-02T06:40:32.169Z"
+date: "2019-10-15T06:40:32.169Z"
 description: Czujesz, że dopadło to ciebie? Co prawda nie jestem psychologiem ani innym specjalistą, który ma papiery na pomaganie w takich kwestiach, jednak zdarzało mi się mieć okresy braku motywacji.
 ---
 

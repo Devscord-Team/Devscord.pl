@@ -1,6 +1,6 @@
 ---
 title: Nauka idzie ci bardzo wolno? Upewnij się, że robisz to dobrze
-date: "2019-11-02T04:40:32.169Z"
+date: "2019-11-01T04:40:32.169Z"
 description: Postaram się opowiedzieć o sposobie na naukę, który pomoże ci przyśpieszyć postępy. Sposób ten nie jest żadnym odkryciem, to nie jest super wiedza z nowo przeprowadzonych badań. Można powiedzieć, że to jest coś, czego jest świadomy praktycznie każdy programista, ale jednoczenie mają z tym często problem początkujący.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Technikum czy liceum w przypadku programisty
-date: "2019-11-02T01:20:32.169Z"
+date: "2019-10-11T01:20:32.169Z"
 description: Temat bardzo popularny, wiele osób się nad tym zastanawia, jednak czy na pewno ma on takie znaczenie?
 ---
 
