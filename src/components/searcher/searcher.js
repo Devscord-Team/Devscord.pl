@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useRef } from "react"
 import styles from "./searcher.module.css"
 import classnames from "classnames"
 import useOnClickOutside from "use-onclickoutside"
