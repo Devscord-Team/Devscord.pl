@@ -2,6 +2,7 @@
 title: Czym jest to całe DDD?
 date: "2019-11-02T01:40:32.169Z"
 description: DDD to termin dokładniej opisany przez m.in Erica Evansa w jego książce „Domain-Driven Design. Zapanuj nad złożonym systemem informatycznym”. Chcesz dowiedzieć się wstępnie o co tutaj chodzi i dlaczego warto zagłębić się w temat? Zapraszam do czytania!
+tags: ["architektura-oprogramowania", "DDD"]
 ---
 
 Temat DDD jest bardzo rozległy — nie jestem w stanie przedstawić całości wewnątrz jednego wpisu, dlatego jedynie streszczę ci, na czym polega praca z tym podejściem. **DDD to skrót od Domain Driven Design, czyli projektowanie oparte o domenę.** Termin dokładnie opisany przez m.in **Erica Evansa** w jego książce **„Domain-Driven Design. Zapanuj nad złożonym systemem informatycznym”**. Jednak nie był on jedyną osobą wyjaśniającą ten temat. Dobrze opisał DDD również **Vaughn Vernon** w **„Implementing Domain-Driven Design”**. Ale jeśli nie interesują cię ich dzieła, w internecie znajdziesz masę kursów i blogów z dogłębnymi opisami elementów DDD — jedną z polecanych osób jest tutaj **Martin Fowler**, który skupia się na tematach architektury oprogramowania.

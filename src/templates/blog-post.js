@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import "gatsby-remark-vscode/styles.css"
 import styles from "./blog-post.module.css"
 
@@ -23,18 +23,17 @@ function BlogPostTemplate({ data, pageContext, location }) {
       />
       <article>
         <header>
-          <h2 className={styles.blogPostTitle}>
-            {post.frontmatter.title}
-          </h2>
-          <p>
-            {post.frontmatter.date}
-          </p>
+          <h2 className={styles.blogPostTitle}>{post.frontmatter.title}</h2>
+          <p>{post.frontmatter.date}</p>
         </header>
-        <section className={styles.blogPostContent} dangerouslySetInnerHTML={{ __html: post.html }}/>
-        <hr/>
+        <section
+          className={styles.blogPostContent}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+        <hr />
       </article>
 
-      <BottomNavigation previous={previous} next={next}/>
+      <BottomNavigation previous={previous} next={next} />
     </Layout>
   )
 }
