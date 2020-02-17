@@ -28,15 +28,18 @@ function getPageHeader({ pathname, title, isDark }) {
           className={isDark ? styles.normalizedDarkLink : styles.normalizedLink}
           to={`/`}
         >
-          () => {title}
+          () => => {title}
         </Link>
       </h1>
     )
   } else {
     return (
       <h1 className={styles.blogPostHeader}>
-        <Link className={isDark ? styles.normalizedDarkLink : styles.normalizedLink} to={`/`}>
-          () => {title}
+        <Link
+          className={isDark ? styles.normalizedDarkLink : styles.normalizedLink}
+          to={`/`}
+        >
+          () => => {title}
         </Link>
       </h1>
     )

@@ -37,19 +37,17 @@ module.exports = {
             }
           },
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          {
-            resolve: `gatsby-remark-vscode`,
-            options: {
-              colorTheme: "Horizon Bold",
-              extensions: [
-                {
-                  identifier: "jolaleye.horizon-theme-vscode",
-                  version: "2.0.2"
-                }
-              ]
-            }
-          }
+          `gatsby-remark-smartypants`
+          // need to migrate
+          // {
+          //   resolve: `gatsby-remark-vscode`,
+          //   options: {
+          //     theme: {
+          //       default: "Horizon"
+          //     },
+          //     extensions: ["horizon-theme-vscode"]
+          //   }
+          // }
         ]
       }
     },
