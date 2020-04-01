@@ -1,4 +1,5 @@
 ---
+author: "Marcin Bigos"
 title: Co daje grupowe tworzenie projektów?
 date: "2019-10-20T05:40:32.169Z"
 description: Próbując tworzyć różnego rodzaju projekty w grupie, zauważyłem, że potrafią być one zauważalnie bardziej rozwijające, od zwykłego pisania kodu samemu.

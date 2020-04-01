@@ -17,3 +17,8 @@
 .date {
   margin-right: 4px;
 }
+
+.post .author:hover {
+  cursor: pointer;
+  color: #95c623;
+}

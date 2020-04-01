@@ -1,4 +1,5 @@
 ---
+author: "Marcin Bigos"
 title: Czy nadaję się na programistę, jeśli jestem słaby z matmy w szkole?
 date: "2019-10-10T07:40:32.169Z"
 description: Dość kontrowersyjny temat, więc całkiem możliwe, że wiele osób będzie miało inne zdanie na ten temat... lub to samo, ale opisywane innymi słowami. Temat dotyczy matematyki, której wymaga od nas szkoła.
@@ -10,10 +11,10 @@ Dość kontrowersyjny temat, więc całkiem możliwe, że wiele osób będzie mi
 
 To zdanie możemy usłyszeć od wielu osób podczas naszego rozwoju jako programista.
 
-*   Rodzina
-*   Nauczyciele
-*   Znajomi
-*   Inne osoby, które nie zajmują się programowaniem
+- Rodzina
+- Nauczyciele
+- Znajomi
+- Inne osoby, które nie zajmują się programowaniem
 
 Dzieje się tak głównie dlatego, że programowanie jest kojarzone przez społeczeństwo na równi z matematyką, tak samo, jak ma to miejsce z przykładowo fizyką. Możliwe, że ma na to wpływ historia informatyki, kiedy wszystko to, czego używamy obecnie było dopiero tworzone i ludzie musieli używać skomplikowanych mechanizmów znanych z matematyki, aby to wszystko w ogóle działało. Aktualnie praca przeciętnego programisty (pomińmy tych, których praca oparta jest o sztuczki matematyczne), to w większości łączenie różnych elementów, aby nadać wartość biznesową. Można rozumieć to tak, że przepisujemy do aplikacji różnego rodzaju procesy, które zachodziły w firmie i wydawała na to zbyt dużo pieniędzy, więc chcą to zautomatyzować za pomocą naszej aplikacji. Przykładem takiego procesu może być klasyczny przykład wystawiania faktur i rachunków. W firmie wyglądało to tak, że
 

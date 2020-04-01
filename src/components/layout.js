@@ -1,45 +1,44 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./layout.module.css"
+import DarkModeToggle from "./darkModeToggle/darkModeToggle"
+import "./layout.css"
 
-export default function Layout({
-  location: { pathname },
-  title,
-  children,
-  isDark
-}) {
-  const header = getPageHeader({ pathname, title, isDark })
-
+export default function Layout({ location: { pathname }, title, children }) {
+  const header = getPageHeader({ pathname, title })
   return (
     <div>
-      <header className={styles.header}>{header}</header>
-      <main className={styles.content}>{children}</main>
+      <DarkModeToggle />
+      <header className="header">{header}</header>
+      <main className="content">{children}</main>
+      <footer className="footer">
+        Copyright{" "}
+        <a className="normalizedLink" href="https://github.com/Devscord-Team">
+          Devscord Team
+        </a>{" "}
+        2020 &copy;
+      </footer>
     </div>
   )
 }
 
-function getPageHeader({ pathname, title, isDark }) {
+function getPageHeader({ pathname, title }) {
   const rootPath = `${__PATH_PREFIX__}/`
 
   if (pathname === rootPath) {
     return (
       <h1>
-        <Link
-          className={isDark ? styles.normalizedDarkLink : styles.normalizedLink}
-          to={`/`}
-        >
-          () => => {title}
+        <Link className="normalizedLink" to={`/`}>
+          <span className="parens">()</span> <span className="arrow">=></span>{" "}
+          <span className="title">{title}</span>
         </Link>
       </h1>
     )
   } else {
     return (
-      <h1 className={styles.blogPostHeader}>
-        <Link
-          className={isDark ? styles.normalizedDarkLink : styles.normalizedLink}
-          to={`/`}
-        >
-          () => => {title}
+      <h1 className="blogPostHeader">
+        <Link className="normalizedLink" to={`/`}>
+          <span className="parens">()</span> <span className="arrow">=></span>{" "}
+          <span className="title">{title}</span>
         </Link>
       </h1>
     )

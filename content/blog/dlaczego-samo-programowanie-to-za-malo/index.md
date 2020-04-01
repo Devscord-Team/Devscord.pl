@@ -1,4 +1,5 @@
 ---
+author: "Marcin Bigos"
 title: Dlaczego samo programowanie to za mało
 date: "2019-10-08T02:40:32.169Z"
 description: Chcesz dowiedzieć się w jaki sposób popchnąć swój rozwój do przodu? Zapraszam do czytania!

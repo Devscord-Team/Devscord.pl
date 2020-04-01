@@ -1,16 +1,27 @@
-import React from "react"
-import styles from "./darkModeToggle.module.css"
+import React, { useState } from "react"
+import "./darkModeToggle.css"
+import { useDarkMode } from "../../utils/useDarkMode"
+import classNames from "classnames"
 
-export default function DarkModeToggle({ isDarkMode, toggleDarkMode }) {
+export default function DarkModeToggle() {
+  const { isDark, setIsDark } = useDarkMode()
+  const [isFocused, setIsFocused] = useState(false)
   return (
-    <div className={styles.toggle}>
+    <div
+      className={classNames({
+        toggle: true,
+        isFocused
+      })}
+    >
       <input
-        className={styles.input}
+        className="input"
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
         type="checkbox"
-        onChange={ev => toggleDarkMode(ev.target.checked)}
-        checked={isDarkMode}
+        onChange={ev => setIsDark(ev.target.checked)}
+        checked={isDark}
       />
-      <span className={styles.slider} />
+      <span className="slider" />
     </div>
   )
 }

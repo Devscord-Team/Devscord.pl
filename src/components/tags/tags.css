@@ -1,0 +1,22 @@
+.tag {
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 7px;
+  color: black;
+  transition: color var(--animation-time) ease-in-out;
+  will-change: color;
+}
+
+.dark .tag {
+  transition: color var(--animation-time) ease-in-out;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.tag:hover {
+  cursor: pointer;
+  border-bottom: 1px dashed black;
+}
+
+.dark .tag:hover {
+  border-bottom: 1px dashed white;
+}

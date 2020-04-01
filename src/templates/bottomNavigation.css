@@ -5,8 +5,11 @@
   list-style: none;
   padding: 0;
 }
-.normalizedLink {
-  color: #95c623;
+.navigation .normalizedLink {
   text-decoration: none;
   font-weight: bold;
+}
+
+.navigation .normalizedLink:hover {
+  color: #95c623;
 }

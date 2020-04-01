@@ -1,0 +1,81 @@
+.header {
+  font-family: "Fira Code", monospace;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  font-size: 1.5rem;
+  width: 51vw;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.content {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+footer a.normalizedLink {
+  border-bottom: 1px solid black;
+}
+
+footer a.normalizedLink:hover {
+  border-bottom: 1px dotted black;
+}
+
+.dark footer a.normalizedLink {
+  border-bottom: 1px solid white;
+}
+
+.dark footer a.normalizedLink:hover {
+  border-bottom: 1px dotted white;
+}
+
+.dark a.normalizedLink {
+  color: white;
+  text-decoration: none;
+}
+
+a.normalizedLink {
+  color: black;
+  text-decoration: none;
+  transition: var(--animation-time) ease-in-out all;
+}
+
+a.normalizedLink:hover {
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Merriweather", monospace;
+}
+
+@media (max-width: 1024px) {
+  .blogPostHeader {
+    font-size: 1.23rem;
+  }
+  .header {
+    width: 70vw;
+  }
+  .content {
+    width: 75vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .blogPostHeader {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    margin-top: -30px;
+  }
+}

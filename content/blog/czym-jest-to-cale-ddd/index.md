@@ -1,4 +1,5 @@
 ---
+author: "Marcin Bigos"
 title: Czym jest to całe DDD?
 date: "2019-11-02T01:40:32.169Z"
 description: DDD to termin dokładniej opisany przez m.in Erica Evansa w jego książce „Domain-Driven Design. Zapanuj nad złożonym systemem informatycznym”. Chcesz dowiedzieć się wstępnie o co tutaj chodzi i dlaczego warto zagłębić się w temat? Zapraszam do czytania!
@@ -11,7 +12,7 @@ Temat DDD jest bardzo rozległy — nie jestem w stanie przedstawić całości w
 
 Ale właśnie, co to domena? Patrząc na Wikipedię, możemy odnieść wrażenie, że to wszystko i nic, nie wiadomo dokładnie, na czym to się opiera.
 
-> **Domena** (łac. _dominium_, „posiadłość, własność, włości, majątek, majętność, zwierzchność, zwierzchnictwo”, od _dominus_, „posiadacz, właściciel, włościan[in], władca, pan, zwierzchnik”) – wyraz oznaczający dziś obszar, pole, dział, gałąź, zakres, krąg, czy sferę, w szczególności: nauk, badań, zainteresowań itp
+> **Domena** (łac. *dominium*, „posiadłość, własność, włości, majątek, majętność, zwierzchność, zwierzchnictwo”, od *dominus*, „posiadacz, właściciel, włościan[in], władca, pan, zwierzchnik”) – wyraz oznaczający dziś obszar, pole, dział, gałąź, zakres, krąg, czy sferę, w szczególności: nauk, badań, zainteresowań itp
 
 Dlatego warto byłoby dokładniej wyjaśnić, co powinniśmy rozumieć jako domenę, a dokładniej domenę w kontekście aplikacji, jakie tworzymy. W przypadku każdej aplikacji (tworzonej w języku obiektowym) spotykamy się z obiektami, które w jakiś sposób ze sobą reagują, przez co możemy powiedzieć, że aplikacja spełnia swoje zadanie. Jest to **logika aplikacji**, która najczęściej jest odzwierciedleniem logiki biznesowej za pomocą kodu. **Logika biznesowa** opisuje, w jaki sposób wyglądają procesy w pewnym biznesie, lub życiu — pojęcie „biznesowa” mogłoby nie istnieć w tym kontekście, jednak zazwyczaj przenosząc zachowania z rzeczywistości do kodu, przenosimy procesy z jakiegoś biznesu. **Logika aplikacji** to implementacja tych procesów w kodzie. A **domena** to cały określony obszar z rzeczywistości, w którym działamy, który posiada swoją logikę biznesową. Można to też nazwać obszarem tematycznym. Można wyróżnić także pojęcie takie jak **specjalista domenowy**, czyli specjalista z określonej branży, który wie dokładnie, jak wszystko powinno działać, jakie obiekty możemy wyróżnić, czym się one charakteryzują i jak one ze sobą reagują.
 
@@ -25,9 +26,9 @@ Jeśli w każdym przypadku nasz value object będzie wyglądać tak samo (np obi
 
 ## **Ale to jedynie najpopularniejsze elementy**
 
-Elementów, z których składa się DDD, jest dużo więcej, co pokazuje przykładowo ten schemat: 
-![ddd-pattern](./ddd-pattern.png) 
+Elementów, z których składa się DDD, jest dużo więcej, co pokazuje przykładowo ten schemat:
+![ddd-pattern](./ddd-pattern.png)
 
-Dlatego w jednym poście nie jestem w stanie opisać każdego z elementów — jeśli temat cię zainteresował i chcesz zagłębić się w temat, zwróć uwagę na źródła, które opisałem na samym początku. 
+Dlatego w jednym poście nie jestem w stanie opisać każdego z elementów — jeśli temat cię zainteresował i chcesz zagłębić się w temat, zwróć uwagę na źródła, które opisałem na samym początku.
 
 **Uwaga** W poście czasami używam wyrażenia „obiekt”, mając na myśli model obiektu. Nie mam tu na myśl fizycznego obiektu, czyli instancji jakiejś klasy.

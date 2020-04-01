@@ -1,11 +1,11 @@
 .postsSummary {
   font-family: "Merriweather", monospace;
-  transition: 0.2s transform 0.3s ease-in-out;
+  transition: var(--animation-time) transform 0.3s ease-in-out;
   letter-spacing: 0.2px;
   transform: translateY(-100px);
 }
 
 .postsSummaryExpanded {
-  transition: 0.2s transform ease-in-out;
+  transition: var(--animation-time) transform ease-in-out;
   transform: translateY(0);
 }

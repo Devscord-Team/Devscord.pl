@@ -1,0 +1,43 @@
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  transition: var(--animation-time) all ease-in-out;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-image: url("./searchDark.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dark .searchIcon {
+  background-image: url("./search.svg");
+}
+
+.searchIcon:hover {
+  cursor: pointer;
+}
+
+.searchIconExpanded {
+  transition: var(--animation-time) all ease-in-out;
+  top: 210px;
+  right: 73.7%;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .searchIconExpanded {
+    right: 86%;
+  }
+}
+
+@media (max-width: 700px) {
+  .searchIconExpanded {
+    top: 185px;
+    right: 85%;
+  }
+}
+
+.searchIconExpanded:hover {
+  cursor: default;
+}

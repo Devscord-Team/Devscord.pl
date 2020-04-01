@@ -82,6 +82,12 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: "https-devscord-pl"
+      }
+    }
   ]
 }

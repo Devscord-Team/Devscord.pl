@@ -1,9 +1,9 @@
 import React from "react"
-import styles from "./tags.module.css"
+import "./tags.css"
 
-export default function Tags({ tags }) {
+export default function Tags({ tags, addToSearch }) {
   return tags.map(tag => (
-    <span className={styles.tag} key={tag}>
+    <span className="tag" key={tag} onClick={() => addToSearch(`#${tag}`)}>
       #{tag}
     </span>
   ))

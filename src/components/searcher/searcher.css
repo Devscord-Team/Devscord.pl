@@ -4,12 +4,12 @@
   height: 0;
   margin-bottom: 50px;
   transform: translateX(-110vw);
-  transition: 0.3s transform ease-in-out;
+  transition: var(--animation-time) all ease-in-out;
 }
 
 .searcher.expandedSearcher {
   transform: translateX(0);
-  transition: 0.3s transform ease-in-out;
+  transition: var(--animation-time) all ease-in-out;
 }
 
 .searcher:hover {
@@ -26,20 +26,23 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid black;
+  transition: var(--animation-time) all ease-in-out;
+  will-change: background-color;
 }
 
-.searchDark {
+.dark .search {
   background-color: rgb(13, 34, 56);
   color: white;
   border-bottom: 1px solid white;
+  transition: var(--animation-time) all ease-in-out;
 }
 
 .search:focus {
   outline: none;
-  border-bottom: 2px ridge black;
+  border-bottom: 2px solid black;
 }
 
-.searchDark:focus {
+.dark .search:focus {
   outline: none;
-  border-bottom: 2px ridge white;
+  border-bottom: 2px solid white;
 }

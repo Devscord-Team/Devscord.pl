@@ -1,4 +1,5 @@
 ---
+author: Marcin Bigos
 title: Technikum czy liceum w przypadku programisty
 date: "2019-10-11T01:20:32.169Z"
 description: Temat bardzo popularny, wiele osób się nad tym zastanawia, jednak czy na pewno ma on takie znaczenie?
@@ -12,8 +13,8 @@ W systemie edukacji egzaminy są robione tak, żeby większość osób na danym 
 
 Dodatkowo dużo osób to osoby, które przychodzą do szkoły z zerową wiedzą. Większość uczniów informatyki stanowią dwa typy osób.
 
-*   Osoby, które lubią grać w gry, więc automatycznie wybrali informatykę, bo jest związana z komputerami... jak się szybko okazuje, to nie to samo. Nawet tworzenie gier to nie jest to samo co granie w gry (co każdego roku zaskakuje masę osób). Jednak fakt, że budowanie domów nie jest zbliżony do mieszkania w ciepłym i wygodnym domu, nikogo nie zaskakuje... dziwni ci ludzie...
-*   Osoby, które słyszały, że na programowaniu lub ogólnie informatyce można dużo zarobić. W takich osobach nie ma nic złego, takie osoby też muszą być. Jednak jeśli nie ma w nas motywacji do samodzielnego pogłębiania wiedzy, to nie zajdziemy daleko. Ucząc się na bieżąco, możemy mieć pracę, jeśli rynek będzie temu sprzyjał, lub jeśli sami będziemy dążyć do spełnienia wymagań pracodawcy. Jednak bez chęci robienia czegoś samodzielnie, bez przymusu... nie zajdziemy daleko, uda nam się zdobyć pracę, jednak nie będą to duże zarobki, raczej takie wystarczające do życia.
+- Osoby, które lubią grać w gry, więc automatycznie wybrali informatykę, bo jest związana z komputerami... jak się szybko okazuje, to nie to samo. Nawet tworzenie gier to nie jest to samo co granie w gry (co każdego roku zaskakuje masę osób). Jednak fakt, że budowanie domów nie jest zbliżony do mieszkania w ciepłym i wygodnym domu, nikogo nie zaskakuje... dziwni ci ludzie...
+- Osoby, które słyszały, że na programowaniu lub ogólnie informatyce można dużo zarobić. W takich osobach nie ma nic złego, takie osoby też muszą być. Jednak jeśli nie ma w nas motywacji do samodzielnego pogłębiania wiedzy, to nie zajdziemy daleko. Ucząc się na bieżąco, możemy mieć pracę, jeśli rynek będzie temu sprzyjał, lub jeśli sami będziemy dążyć do spełnienia wymagań pracodawcy. Jednak bez chęci robienia czegoś samodzielnie, bez przymusu... nie zajdziemy daleko, uda nam się zdobyć pracę, jednak nie będą to duże zarobki, raczej takie wystarczające do życia.
 
 ## **A więc co wybrać?**
 
@@ -29,5 +30,5 @@ O tym, że technikum nauczy cię zawodu programisty, możesz zapomnieć. Po tech
 
 ## **Ostateczna decyzja**
 
-*   Wolisz mieć przedłużenie podstawówki, z lekkim polem do wyboru, jeśli chodzi o przedmioty, ale za to spędzać tam mniej czasu?
-*   Czy wolisz spędzać w szkole więcej czasu, ale mieć sporo lekcji na zasadzie „grzebanie przy serwerze z kolegą i dyskusje o życiu”?
+- Wolisz mieć przedłużenie podstawówki, z lekkim polem do wyboru, jeśli chodzi o przedmioty, ale za to spędzać tam mniej czasu?
+- Czy wolisz spędzać w szkole więcej czasu, ale mieć sporo lekcji na zasadzie „grzebanie przy serwerze z kolegą i dyskusje o życiu”?
