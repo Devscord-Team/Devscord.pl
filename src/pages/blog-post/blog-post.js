@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 import "gatsby-remark-vscode/styles.css"
 import "./blog-post.css"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { useDarkMode } from "../utils/useDarkMode"
-import BottomNavigation from "../templates/bottomNavigation"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { useDarkMode } from "../../utils/useDarkMode"
+import BottomNavigation from "./bottomNavigation"
 import { Disqus } from "gatsby-plugin-disqus"
 
 function BlogPostTemplate({ data, pageContext, location }) {

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import "./postSummary.css"
 import Tags from "../tags/tags"
+import { author as authorSymbol } from "../../utils/symbols"
 
 export default function PostSummary({
   post: {
@@ -29,8 +30,12 @@ export default function PostSummary({
         <small className="date">{date}</small>
         <small>
           {readingTime} {minutesInCorrectForm} czytania,{" "}
-          <span className="author" onClick={() => addToSearch(`@${author}`)}>
-            @{author}
+          <span
+            className="author"
+            onClick={() => addToSearch(`${authorSymbol}${author}`)}
+          >
+            {authorSymbol}
+            {author}
           </span>
         </small>
       </header>

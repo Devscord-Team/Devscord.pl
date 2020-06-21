@@ -3,10 +3,11 @@ import useLocalStorage from "react-use-localstorage"
 
 export function useDarkMode() {
   const [isDark, setIsDark] = useLocalStorage("theme")
+  const parsed = JSON.parse(isDark)
 
   useEffect(() => {
-    document.body.classList.toggle("dark", JSON.parse(isDark))
+    document.body.classList.toggle("dark", parsed)
   }, [isDark])
 
-  return { isDark: JSON.parse(isDark), setIsDark }
+  return { isDark: parsed, setIsDark }
 }
