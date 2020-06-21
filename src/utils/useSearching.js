@@ -34,7 +34,7 @@ export function useSearching(collection) {
 
 function getAuthor(phrase) {
   return phrase.split(" ").reduce((localAuthor, currentWord, i, array) => {
-    if (currentWord.includes(authorSymbol``)) {
+    if (currentWord.includes(authorSymbol)) {
       if (array[i + 1]) {
         return `${localAuthor} ${currentWord.substr(1)} ${array[i + 1]}`
       } else {
