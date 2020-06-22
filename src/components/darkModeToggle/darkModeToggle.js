@@ -25,7 +25,11 @@ export default function DarkModeToggle() {
         isFocused
       })}
     >
+      <label className="toggle-label" htmlFor="toggle">
+        Zmiana motywu
+      </label>
       <input
+        id="toggle"
         className="input"
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
