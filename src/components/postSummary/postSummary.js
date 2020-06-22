@@ -47,6 +47,7 @@ export default function PostSummary({
             </span>
           </small>
         </header>
+        <hr />
         <section>
           <p className="content">{content}</p>
         </section>

@@ -1,11 +1,14 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "devscord",
+  "private": false,
+  "description": "Blog",
+  "version": "0.0.1",
+  "contributors": [
+    {"name": "Mateusz Stepaniuk", "email": "stepaniuk.m05@gmail.com"},
+    {"name": "Marcin Bigos"}
+  ],
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Devscord-Team/Devscord.pl/issues"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -51,19 +54,21 @@
   "devDependencies": {
     "prettier": "^2.0.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://devscord.pl/",
   "keywords": [
-    "gatsby"
+    "blog",
+    "devscord",
+    "programming"
   ],
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Devscord-Team/Devscord.pl.git"
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
