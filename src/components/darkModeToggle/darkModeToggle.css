@@ -12,16 +12,18 @@
   content: "☀️";
   font-size: 18px;
   position: absolute;
-  top: 7px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 37px;
 }
 .toggle::before {
   content: "🌙";
   font-size: 18px;
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: 6px;
   z-index: 1;
+  transform: translateY(-50%);
 }
 
 .input {

@@ -1,5 +1,5 @@
 .post {
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .post-title {
@@ -21,4 +21,11 @@
 .post .author:hover {
   cursor: pointer;
   color: #95c623;
+}
+
+@media (max-width: 700px) {
+  .content {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
 }

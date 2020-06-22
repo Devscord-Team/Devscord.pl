@@ -25,16 +25,24 @@
   z-index: 10;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 700px) {
   .searchIconExpanded {
-    right: 86%;
+    top: 155px;
+    right: 84%;
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 701px) and (max-width: 1024px) {
   .searchIconExpanded {
-    top: 185px;
-    right: 85%;
+    top: 210px;
+    right: 85.5%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 3500px) {
+  .searchIconExpanded {
+    top: 210px;
+    right: 79.5%;
   }
 }
 

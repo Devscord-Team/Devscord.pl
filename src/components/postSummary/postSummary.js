@@ -27,7 +27,7 @@ export default function PostSummary({
       transition={{ delay: i * 0.1 }}
       className="post"
     >
-      <article className="post">
+      <article>
         <header>
           <h3>
             <Link className="post-title" to={slug}>

@@ -97,3 +97,12 @@ blockquote span.author::before {
     word-spacing: 0.3rem;
   }
 }
+
+@media (max-width: 700px) {
+  .blogPostTitle {
+    font-size: 1.6rem;
+  }
+  .blogPostContent {
+    font-size: 0.9rem;
+  }
+}

@@ -14,3 +14,10 @@ html {
 :root {
   --animation-time: 0.3s;
 }
+
+@media (max-width: 400px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
