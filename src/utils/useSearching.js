@@ -72,7 +72,7 @@ function getFilteredCollection({ phrase, author, tags, collection }) {
 }
 
 const includesPhrase = phrase => post =>
-  post.node.frontmatter.title.includes(phrase)
+  post.node.frontmatter.title.toLowerCase().includes(phrase.toLowerCase())
 
 const byAuthor = author => post => {
   if (author.length > 0) {
