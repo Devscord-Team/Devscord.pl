@@ -3,7 +3,10 @@
   background-color: rgb(13, 34, 56);
   transition: all var(--animation-time) ease-in-out;
 }
-body {
+body,
+html {
+  margin: 0;
+  padding: 0;
   transition: var(--animation-time) ease-in-out all;
   will-change: background-color;
 }

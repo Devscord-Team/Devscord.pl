@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 function useLocalStorage(key, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
@@ -31,7 +31,7 @@ function useLocalStorage(key, initialValue) {
 
 export function useDarkMode() {
   const [isDark, setIsDark] = useLocalStorage("theme")
-  const parsed = isDark ? JSON.parse(isDark) : isDark
+  const parsed = isDark && JSON.parse(isDark)
 
   useEffect(() => {
     document.body.classList.toggle("dark", parsed)

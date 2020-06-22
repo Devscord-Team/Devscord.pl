@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 export default function NotFoundPage({ location, data }) {
   return (
     <Layout location={location} title={getTitleFromData(data)}>
-      <SEO title="404: Nie znaleziono" />
+      <SEO title="Nie znaleziono" />
       <h1>Smuteg 😭</h1>
       <Link class="normalizedLink" to="/">
         Powrót do strony głównej

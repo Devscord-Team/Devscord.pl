@@ -13,9 +13,16 @@ export default function PostsSummary({ posts, expanded, addToSearch }) {
       })}
     >
       {posts &&
-        posts.map(({ node }) => {
+        posts.map(({ node }, index) => {
           const post = getPostInfoFromNode(node)
-          return <Post key={post.slug} post={post} addToSearch={addToSearch} />
+          return (
+            <Post
+              key={post.slug}
+              post={post}
+              i={index}
+              addToSearch={addToSearch}
+            />
+          )
         })}
     </div>
   )
