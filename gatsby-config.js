@@ -64,12 +64,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Devscord.pl`,
-        short_name: `DevscordPL`,
+        short_name: `Devscord`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#95c623`,
         display: `minimal-ui`,
-        icon: `content/assets/favicon.png`
+        icon: `content/assets/icon.jpg`
       }
     },
     `gatsby-plugin-offline`,
