@@ -46,3 +46,8 @@
   outline: none;
   border-bottom: 2px solid white;
 }
+
+.search-label {
+  position: absolute;
+  left: -9000;
+}

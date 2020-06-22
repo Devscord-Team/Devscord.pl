@@ -21,7 +21,11 @@ export default function Searcher({
         expandedSearcher: expanded
       })}
     >
+      <label className="search-label" htmlFor="search">
+        Szukajka
+      </label>
       <input
+        id="search"
         value={searchingPhrase}
         type="text"
         className="search"
