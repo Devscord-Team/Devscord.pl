@@ -71,17 +71,17 @@ function getFilteredCollection({ phrase, author, tags, collection }) {
     .toArray()
 }
 
-const includesPhrase = (phrase) => (post) =>
+const includesPhrase = phrase => post =>
   post.node.frontmatter.title.includes(phrase)
 
-const byAuthor = (author) => (post) => {
+const byAuthor = author => post => {
   if (author.length > 0) {
     return post.node.frontmatter.author.trim().includes(author.trim())
   }
   return true
 }
 
-const includesAllTags = (tags) => (post) => {
+const includesAllTags = tags => post => {
   if (tags.length > 0) {
     return tags.reduce((areAllTagsPresent, currentTag) => {
       if (!areAllTagsPresent) return false
@@ -90,9 +90,11 @@ const includesAllTags = (tags) => (post) => {
         currentTag.length > 0
       ) {
         return (
-          post.node.frontmatter.tags.filter((tag) => tag.includes(currentTag))
+          post.node.frontmatter.tags.filter(tag => tag.includes(currentTag))
             .length > 0
         )
+      } else {
+        return false
       }
     }, true)
   } else return true

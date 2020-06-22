@@ -28,7 +28,8 @@ function getPageHeader({ pathname, title }) {
     return (
       <h1>
         <Link className="normalizedLink" to={`/`}>
-          <span className="parens">()</span> <span className="arrow">=></span>{" "}
+          <span className="parens">()</span>{" "}
+          <span className="arrow">=&gt;</span>{" "}
           <span className="title">{title}</span>
         </Link>
       </h1>
@@ -37,7 +38,8 @@ function getPageHeader({ pathname, title }) {
     return (
       <h1 className="blogPostHeader">
         <Link className="normalizedLink" to={`/`}>
-          <span className="parens">()</span> <span className="arrow">=></span>{" "}
+          <span className="parens">()</span>{" "}
+          <span className="arrow">=&gt;</span>{" "}
           <span className="title">{title}</span>
         </Link>
       </h1>

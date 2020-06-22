@@ -10,7 +10,7 @@ export default function DarkModeToggle() {
   })
   const [isFocused, setIsFocused] = useState(false)
 
-  const handle = (ev) => {
+  const handle = ev => {
     if (ev.target.checked) {
       darkMode.enable()
     } else {

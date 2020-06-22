@@ -18,9 +18,9 @@ export default function BlogIndex({ location }) {
   const { shrink, expand, isExpanded } = usePostsExpansion(searchingPhrase)
 
   const addToSearch = useCallback(
-    (phraseToAdd) => {
+    phraseToAdd => {
       expand()
-      setSearchingPhrase((phrase) => `${phrase} ${phraseToAdd}`.trim())
+      setSearchingPhrase(phrase => `${phrase} ${phraseToAdd}`.trim())
     },
     [expand, setSearchingPhrase]
   )

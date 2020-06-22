@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Devscord.pl`,
     author: `Devscord.pl Team`,
-    description: `Blog dla każdego programisty, który chce wiedzieć więcej.`,
+    description: `Blog dla każdego programisty, który chce wiedzieć więcej.`,
     siteUrl: `https://devscord.pl/`
   },
   plugins: [
@@ -100,6 +100,7 @@ module.exports = {
       options: {
         shortname: "https-devscord-pl"
       }
-    }
+    },
+    `gatsby-plugin-eslint`
   ]
 }
