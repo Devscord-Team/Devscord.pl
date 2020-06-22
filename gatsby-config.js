@@ -7,6 +7,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-use-dark-mode`,
+      options: {
+        classNameDark: "dark",
+        storageKey: "theme"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -37,17 +44,19 @@ module.exports = {
             }
           },
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
-          // need to migrate
-          // {
-          //   resolve: `gatsby-remark-vscode`,
-          //   options: {
-          //     theme: {
-          //       default: "Horizon"
-          //     },
-          //     extensions: ["horizon-theme-vscode"]
-          //   }
-          // }
+          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: {
+                default: "Horizon Bold",
+                parentSelector: {
+                  "body.dark": "Horizon Bright Bold"
+                }
+              },
+              extensions: ["horizon-theme-vscode"]
+            }
+          }
         ]
       }
     },

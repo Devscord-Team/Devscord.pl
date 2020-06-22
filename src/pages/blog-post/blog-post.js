@@ -5,12 +5,12 @@ import "./blog-post.css"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import { useDarkMode } from "../../utils/useDarkMode"
+import useDarkMode from "use-dark-mode"
 import BottomNavigation from "./bottomNavigation"
 import { Disqus } from "gatsby-plugin-disqus"
 
 function BlogPostTemplate({ data, pageContext, location }) {
-  const { isDark } = useDarkMode()
+  const { value: isDark } = useDarkMode()
 
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title

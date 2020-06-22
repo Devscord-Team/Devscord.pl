@@ -1,11 +1,25 @@
 import React, { useState } from "react"
 import "./darkModeToggle.css"
-import { useDarkMode } from "../../utils/useDarkMode"
+import useDarkMode from "use-dark-mode"
 import classNames from "classnames"
 
 export default function DarkModeToggle() {
-  const { isDark, setIsDark } = useDarkMode()
+  const darkMode = useDarkMode(false, {
+    storageKey: "theme",
+    classNameDark: "dark"
+  })
   const [isFocused, setIsFocused] = useState(false)
+
+  console.log(darkMode.value)
+
+  const handle = (ev) => {
+    if (ev.target.checked) {
+      darkMode.enable()
+    } else {
+      darkMode.disable()
+    }
+  }
+
   return (
     <div
       className={classNames({
@@ -18,8 +32,8 @@ export default function DarkModeToggle() {
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         type="checkbox"
-        onChange={ev => setIsDark(ev.target.checked)}
-        checked={isDark}
+        onChange={handle}
+        checked={darkMode.value}
       />
       <span className="slider" />
     </div>
