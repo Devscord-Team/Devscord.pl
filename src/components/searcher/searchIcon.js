@@ -2,24 +2,23 @@ import React from "react"
 import classnames from "classnames"
 import "./searchIcon.css"
 
-export default function SearchIcon({ shrink, expand, expanded, reference }) {
+export default function SearchIcon({ shrink, expand, expanded, isBlocked }) {
   const handle = () => {
-    if (!expanded) {
-      expand()
-    } else {
-      shrink()
+    if (!isBlocked) {
+      if (!expanded) {
+        expand()
+      } else {
+        shrink()
+      }
     }
   }
   return (
-    <>
-      <div
-        ref={reference}
-        onClick={handle}
-        className={classnames({
-          searchIcon: true,
-          searchIconExpanded: expanded
-        })}
-      />
-    </>
+    <div
+      onClick={handle}
+      className={classnames({
+        searchIcon: true,
+        searchIconExpanded: expanded
+      })}
+    />
   )
 }

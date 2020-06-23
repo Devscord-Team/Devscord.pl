@@ -1,6 +1,5 @@
-import React, { useRef, forwardRef } from "react"
+import React from "react"
 import classnames from "classnames"
-import { useOnClickOutside } from "../../utils/useClickOutside"
 
 import "./searcher.css"
 import SearchIcon from "./searchIcon"
@@ -12,24 +11,10 @@ export default function Searcher({
   searchingPhrase,
   setSearchingPhrase
 }) {
-  const searcherRef = useRef()
-  const iconRef = useRef()
-  useOnClickOutside([searcherRef, iconRef], shrink)
-
-  const IconWithRef = forwardRef((props, ref) => (
-    <SearchIcon {...props} reference={ref} />
-  ))
-
   return (
     <>
-      <IconWithRef
-        ref={iconRef}
-        expanded={expanded}
-        expand={expand}
-        shrink={shrink}
-      />
+      <SearchIcon expanded={expanded} expand={expand} shrink={shrink} />
       <div
-        ref={searcherRef}
         className={classnames({
           searcher: true,
           expandedSearcher: expanded
