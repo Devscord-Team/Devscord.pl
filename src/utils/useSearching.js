@@ -83,19 +83,9 @@ const byAuthor = author => post => {
 
 const includesAllTags = tags => post => {
   if (tags.length > 0) {
-    return tags.reduce((areAllTagsPresent, currentTag) => {
-      if (!areAllTagsPresent) return false
-      else if (
-        Array.isArray(post.node.frontmatter.tags) &&
-        currentTag.length > 0
-      ) {
-        return (
-          post.node.frontmatter.tags.filter(tag => tag.includes(currentTag))
-            .length > 0
-        )
-      } else {
-        return false
-      }
-    }, true)
-  } else return true
+    for (let tag of tags) {
+      if (!post.node.frontmatter.tags.includes(tag)) return false
+    }
+  }
+  return true
 }
