@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 import { chainFrom } from "transducist"
 import { author as authorSymbol, tag as tagSymbol } from "./symbols"
 
+const SKIP_SYMBOL = 1
+
 export function useSearching(collection) {
   const [filteredCollection, setFilteredCollection] = useState()
   const [searchingPhrase, setSearchingPhrase] = useState("")
@@ -36,9 +38,11 @@ function getAuthor(phrase) {
   return phrase.split(" ").reduce((localAuthor, currentWord, i, array) => {
     if (currentWord.includes(authorSymbol)) {
       if (array[i + 1]) {
-        return `${localAuthor} ${currentWord.substr(1)} ${array[i + 1]}`
+        return `${localAuthor} ${currentWord.substr(SKIP_SYMBOL)} ${
+          array[i + 1]
+        }`
       } else {
-        return `${localAuthor} ${currentWord.substr(1)}`
+        return `${localAuthor} ${currentWord.substr(SKIP_SYMBOL)}`
       }
     } else {
       return localAuthor
@@ -49,7 +53,7 @@ function getAuthor(phrase) {
 function getTags(phrase) {
   const tags = phrase.split(" ").reduce((localTags, currentWord) => {
     if (currentWord.includes(tagSymbol))
-      return [...localTags, currentWord.slice(1)]
+      return [...localTags, currentWord.slice(SKIP_SYMBOL)]
     else return localTags
   }, [])
 
