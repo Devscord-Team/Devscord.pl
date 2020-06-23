@@ -12,9 +12,9 @@ export default function DarkModeToggle() {
 
   const handle = ev => {
     if (ev.target.checked) {
-      darkMode.enable()
-    } else {
       darkMode.disable()
+    } else {
+      darkMode.enable()
     }
   }
 
@@ -35,7 +35,7 @@ export default function DarkModeToggle() {
         onBlur={() => setIsFocused(false)}
         type="checkbox"
         onChange={handle}
-        checked={darkMode.value}
+        checked={!darkMode.value}
       />
       <span className="slider" />
     </div>
