@@ -25,6 +25,7 @@
   ],
   "rules": {
     "no-console": "warn",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/display-name": "off"
   }
 }

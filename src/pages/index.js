@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Searcher from "../components/searcher/searcher"
-import SearchIcon from "../components/searcher/searchIcon"
 import PostsSummary from "../components/postsSummary/postsSummary"
 import SEO from "../components/seo"
 import { useSearching } from "../utils/useSearching"
@@ -38,7 +37,6 @@ export default function BlogIndex({ location }) {
         shrink={shrink}
         expand={expand}
       />
-      <SearchIcon expanded={isExpanded} expand={expand} />
       <PostsSummary
         expanded={isExpanded}
         posts={filteredCollection}

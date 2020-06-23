@@ -5,47 +5,63 @@
   position: absolute;
   top: 30px;
   right: 30px;
-  background-image: url("./searchDark.svg");
+  /* background-image: url("./searchDark.svg");
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
-.dark .searchIcon {
-  background-image: url("./search.svg");
+.searchIcon::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  transform: rotate(45deg);
+  background-color: black;
+  color: black;
+  transition: var(--animation-time) ease-in-out all;
+}
+
+.searchIcon::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transform: translateX(-10px);
+  transition: var(--animation-time) ease-in-out all;
+}
+
+.searchIcon.searchIconExpanded::before {
+  border-radius: 0;
+  height: 2px;
+  width: 30px;
+  transform: translate(-15px, 9px) rotate(-45deg);
+  border: none;
+  background-color: black;
+  color: black;
+  transition: var(--animation-time) ease-in-out all;
+}
+
+.searchIcon.searchIconExpanded::after {
+  width: 30px;
+  transition: var(--animation-time) ease-in-out all;
+  transform: translate(-15px, 8px) rotate(45deg);
+}
+
+.dark .searchIcon::after {
+  background-color: white;
+}
+
+.dark .searchIcon::before {
+  background-color: rgb(13, 34, 56);
+  border-color: white;
+}
+
+.dark .searchIconExpanded::before {
+  background-color: white;
 }
 
 .searchIcon:hover {
   cursor: pointer;
-}
-
-.searchIconExpanded {
-  transition: var(--animation-time) all ease-in-out;
-  top: 210px;
-  right: 73.7%;
-  z-index: 10;
-}
-
-@media (max-width: 700px) {
-  .searchIconExpanded {
-    top: 155px;
-    right: 84%;
-  }
-}
-
-@media (min-width: 701px) and (max-width: 1024px) {
-  .searchIconExpanded {
-    top: 210px;
-    right: 85.5%;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 3500px) {
-  .searchIconExpanded {
-    top: 210px;
-    right: 79.5%;
-  }
-}
-
-.searchIconExpanded:hover {
-  cursor: default;
 }

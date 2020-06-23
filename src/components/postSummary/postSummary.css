@@ -1,5 +1,9 @@
 .post {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.post:last-of-type {
+  margin-bottom: 10px;
 }
 
 .post-title {

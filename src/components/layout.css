@@ -3,7 +3,7 @@
   margin-top: 40px;
   margin-bottom: 100px;
   font-size: 1.5rem;
-  width: 51vw;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -11,7 +11,7 @@
 }
 
 .content {
-  width: 50vw;
+  width: 55vw;
   margin: 0 auto;
 }
 
@@ -59,9 +59,6 @@ a.normalizedLink:hover {
 @media (max-width: 3500px) {
   .header {
     text-align: center;
-  }
-  .content {
-    width: 60vw;
   }
 }
 
