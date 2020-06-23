@@ -1,5 +1,5 @@
 .dark {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.884) !important;
   background-color: rgb(13, 34, 56);
   transition: all var(--animation-time) ease-in-out;
 }

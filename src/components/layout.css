@@ -6,7 +6,7 @@
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: rgba(255, 255, 255, 0.884);
   text-align: center;
 }
 
@@ -28,15 +28,15 @@ footer a.normalizedLink:hover {
 }
 
 .dark footer a.normalizedLink {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.884);
 }
 
 .dark footer a.normalizedLink:hover {
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.884);
 }
 
 .dark a.normalizedLink {
-  color: white;
+  color: rgba(255, 255, 255, 0.884);
   text-decoration: none;
 }
 

@@ -8,7 +8,7 @@
 
 .blogPostContent {
   font-family: "Roboto", monospace;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .blogPostContent ul,
@@ -18,8 +18,8 @@
 
 .blogPostContent p {
   word-spacing: 0.2rem;
-  line-height: 1.55rem;
-  text-align: justify;
+  line-height: 1.6rem;
+  text-align: left;
 }
 
 .blogPostContent a {
@@ -30,7 +30,7 @@
   position: relative;
   display: inline-block;
   background-color: rgb(13, 34, 56);
-  padding: 20px 15px 15px 30px;
+  padding: 10px 15px 15px 30px;
   border-radius: 10px;
   font-family: "Bitter", serif;
   color: white;

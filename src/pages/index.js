@@ -50,6 +50,7 @@ function useRequiredData() {
   const { site, allMarkdownRemark } = useStaticQuery(pageQuery)
   const siteTitle = site.siteMetadata.title
   const posts = allMarkdownRemark.edges
+
   return { siteTitle, posts }
 }
 
